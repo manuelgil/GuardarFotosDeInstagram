@@ -1,6 +1,6 @@
-# Guardar Fotos de Instagram
+Guardar Fotos de Instagram
 
-## Esta aplicación te permite descargar las fotos a tu computador desde cualquier cuenta de instagram.
+Esta aplicación te permite descargar las fotos a tu computador desde cualquier cuenta de instagram.
 
 1) Solo tienes que copiar la ruta de la imágen a desargar. 
 2) La pegas en el buscador.
