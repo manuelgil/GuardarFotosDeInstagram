@@ -1,0 +1,8 @@
+#loader { width: 30px; height: 30px; }
+.logo { margin-left: 37%; height: 51px; }
+.buscar { cursor: pointer; }
+.header { margin-top: 20%; }
+.aimg { display: none; }
+#img { width: 100%; }
+.thumbnail:hover { border-color: rgba(58, 138, 255, 0.9); }
+footer { padding-bottom: 20px; }
