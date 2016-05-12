@@ -2,6 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/lib/font-awesome.min.css">
 		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
 		<link rel="stylesheet" href="css/lib/animate.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
@@ -12,7 +13,6 @@
 			<div class="row header">
 				<div class="col-md-3"></div>
 				<div class="col-md-6 flipInX animated">
-					<!-- <img src="img/logo.png" alt="Instagram" class="logo"> -->
 					<a href="https://www.instagram.com" class="logo" target="_blank">Instagram</a>
 					<div class="input-group ">
 						<input type="text" id="url" placeholder="https://www.instagram.com/x/xxXxxXxx" autofocus>
@@ -42,7 +42,7 @@
 		</div>
 
 	    <footer class="text-center">
-	    	DESARROLLADO POR: <font color="black"> &copy; MANUEL GIL </font>
+	    	DESARROLLADO POR: &nbsp;<a href="https://github.com/myei" target="_blank" class="social"><i class="fa fa-github"></i> myei</a>
 	    </footer>
 
 		<script src="js/lib/jquery-2.2.3.min.js"></script>

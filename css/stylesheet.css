@@ -145,3 +145,7 @@ footer {
 		transform: rotate(360deg);
 	}
 }
+
+.social {
+  color: black;
+}
