@@ -15,7 +15,7 @@ function search () {
 			dataType: 'json',
 			data: { url:$('#url').val() },
 			beforeSend: function(){
-				$('.result').hide();
+				$('.result').hide().children('img').prop('src', '');
 				$('.alert').addClass('hide');
 			  	$('.loading').removeClass('hide');
 			},
