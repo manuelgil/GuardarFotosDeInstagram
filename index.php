@@ -43,7 +43,7 @@
 		</div>
 
 	    <footer class="text-center">
-	    	DESARROLLADO POR: &nbsp;<a href="https://github.com/myei" target="_blank" class="social"><i class="fa fa-github"></i> myei</a>
+	    	DESARROLLADO POR: &nbsp;<a href="https://github.com/myei/dl-instagram-photos" target="_blank" class="social"><i class="fa fa-github"></i> myei</a>
 	    </footer>
 
 		<script src="js/lib/jquery-2.2.3.min.js"></script>
