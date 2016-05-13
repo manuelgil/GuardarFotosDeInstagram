@@ -16,12 +16,13 @@ function search () {
 			data: { url:$('#url').val() },
 			beforeSend: function(){
 				$('.result').hide().children('img').prop('src', '');
-				$('.alert').addClass('hide');
+				$('.alert').hide();
 			  	$('.loading').removeClass('hide');
 			},
 			success: function(data){
 				if (data['photo'].indexOf('https') > -1) {
-					$('.alert, .loading').addClass('hide');
+					$('.alert').hide();
+					$('.loading').addClass('hide');
 					$('.header').animate({ 'margin-top': '63px' }, 300, function() { 
 						$('.result header').html(data['username']).next().prop('src', data['photo']).parent().show();
 						$('html, body').animate({ scrollTop: $('.result').offset().top }, 0);
@@ -39,10 +40,11 @@ function search () {
 
 function showError() {
 	$('.result').hide();
-	$('.alert').removeClass('hide');
+	$('.alert').fadeIn();
 	$('.loading').addClass('hide');
 	$('.header').animate({ 'margin-top': '20%' }, 300);
 	animate('#url, .buscar', 'shake')
+	setTimeout(function() { $('.alert').fadeOut() }, 5000);
 }
 
 function animate(el, x) {

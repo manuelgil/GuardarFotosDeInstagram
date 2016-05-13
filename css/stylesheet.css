@@ -163,3 +163,5 @@ footer {
   cursor: pointer;
 
 }
+
+.alert { display: none; }

@@ -34,7 +34,7 @@
 			    		<i class="fa fa-download dl"></i>
 			    	</article>
 				
-					<div class="alert alert-danger hide" role="alert">
+					<div class="alert alert-danger" role="alert">
 						<span class="fa fa-warning"></span>&nbsp; ¡Este enlace no es válido! O no posee conexión a internet...
 					</div>
 			    </div>
