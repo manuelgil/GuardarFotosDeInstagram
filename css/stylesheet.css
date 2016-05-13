@@ -130,11 +130,14 @@ footer {
 	border: solid;
 	border-color: #4090AB transparent transparent transparent;
 	margin-top: -100px;
-	animation: loading 1s;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -o-animation-direction: normal;
-    animation-direction: normal;
+  animation: loading 1s;
+  -webkit-animation: loading 1s;
+  -moz-animation: loading 1s;
+	-o-animation: loading 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 @keyframes loading {
@@ -148,4 +151,15 @@ footer {
 
 .social {
   color: black;
+}
+
+.dl {
+  top: 22px;
+  right: 40px;
+  font-size: 18px;
+  position: absolute;
+  z-index: 999;
+  color: inherit;
+  cursor: pointer;
+
 }

@@ -2,8 +2,8 @@ $(document).ready(function(){
 	$('#url').keyup(function(e){ if (e.keyCode == 13)  search(); });
 	$('.buscar').click(function(){ search(); });
 
-	$('.result img').click(function(){
-		window.open('php/downloadPhoto.php?url_img=' + $(this).prop('src'), '_blank');
+	$('.result img, .dl').click(function(){
+		window.open('php/downloadPhoto.php?url_img=' + $('.result img').prop('src'), '_blank');
 	});
 });
 

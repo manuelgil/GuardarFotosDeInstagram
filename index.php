@@ -4,9 +4,9 @@
 		<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="css/lib/font-awesome.min.css">
 		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
-		<link rel="stylesheet" href="css/lib/animate.css">
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<title>Obtener foto de Instagram</title>
+		<link rel="stylesheet" href="css/lib/animate.min.css">
+		<link rel="stylesheet" href="css/stylesheet.min.css">
+		<title>Descargar fotos de Instagram</title>
 	</head>
 	<body>
 		<div class="container">
@@ -16,7 +16,7 @@
 					<a href="https://www.instagram.com" class="logo" target="_blank">Instagram</a>
 					<div class="input-group ">
 						<input type="text" id="url" placeholder="https://www.instagram.com/x/xxXxxXxx" autofocus>
-						<span class="input-group-addon buscar"><span class="glyphicon glyphicon-search"></span></span>
+						<span class="input-group-addon buscar"><span class="fa fa-search"></span></span>
 					</div>
 		    		<hr>
 				</div>
@@ -31,10 +31,11 @@
 			    	<article class="result">
 			    		<header></header>
 			    		<img>
+			    		<i class="fa fa-download dl"></i>
 			    	</article>
 				
 					<div class="alert alert-danger hide" role="alert">
-						<span class="glyphicon glyphicon-remove"></span>&nbsp; ¡Este enlace no es válido! O no posee conexión a internet...
+						<span class="fa fa-warning"></span>&nbsp; ¡Este enlace no es válido! O no posee conexión a internet...
 					</div>
 			    </div>
 			
@@ -47,6 +48,6 @@
 
 		<script src="js/lib/jquery-2.2.3.min.js"></script>
 		<script src="js/lib/bootstrap.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
