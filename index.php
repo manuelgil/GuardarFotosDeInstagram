@@ -15,7 +15,7 @@
 				<div class="col-md-6 flipInX animated">
 					<a href="https://www.instagram.com" class="logo" target="_blank">Instagram</a>
 					<div class="input-group ">
-						<input type="text" id="url" placeholder="https://www.instagram.com/x/xxXxxXxx" autofocus>
+						<input type="text" id="url" placeholder="https://www.instagram.com/x/xxXxxXxx" autocomplete="off" autofocus>
 						<span class="input-group-addon buscar"><span class="fa fa-search"></span></span>
 					</div>
 		    		<hr>
