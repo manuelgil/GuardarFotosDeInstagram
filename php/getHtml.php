@@ -1,13 +1,7 @@
 <?php 
-	error_reporting(0);
-	$html = '';
-	$file = fopen($_POST['url'], 'r') or die ('No se encontró la página.');
+	$content = file_get_contents($_POST['url']) or die('Not Found');
 
-	while (!feof($file))
-		$html .= fgets($file, 4096);
+	$data = explode('"', str_replace(array(" ", "\n", "\r"), "", $content));
 	
-	fclose ($file);
-	
-	$data = explode('"', substr(preg_replace('[\s+]', '', $html), 1508));
-	echo json_encode(array('username' => explode('@', $data[109])[1], 'photo' => $data[123]));
+	echo json_encode(array('username' => explode('@', $data[143])[1], 'photo' => $data[157]));
 ?>
