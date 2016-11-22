@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="css/lib/font-awesome.min.css">
 		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
