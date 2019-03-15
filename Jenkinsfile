@@ -4,7 +4,8 @@ pipeline {
     stage('deploy') {
       agent any
       steps {
-        sh 'cp -r * /var/www/html/dl-instagram'
+        sh '''mkdir /var/www/html/dl-instagram
+cp -r * /var/www/html/dl-instagram'''
       }
     }
     stage('communicate deploy') {
