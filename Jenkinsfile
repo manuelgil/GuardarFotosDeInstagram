@@ -4,11 +4,7 @@ pipeline {
     stage('deploy') {
       agent any
       steps {
-        catchError() {
-          sh 'cp -r * /var/www/html/dl-instagram'
-          mail(subject: 'WEB SERVER - DEPLOY ERROR', body: 'Hey mister, an error has ocurred. Take a look please. I\'m sorry.', to: 'manuelyeixon@gmail.com', replyTo: 'yourfriend@gmail.com')
-        }
-
+        sh 'cp -r * /var/www/html/dl-instagram'
       }
     }
     stage('communicate deploy') {
