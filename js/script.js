@@ -32,7 +32,7 @@ function search () {
 					showError();
 			},
 		   error: function() { showError(); }
-			,timeout: 10000
+			,timeout: 100000
 		});
 	} else 
 		showError();
