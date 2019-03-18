@@ -1,6 +1,12 @@
-<?php 
+<?php
 	$content = file_get_contents($_POST['url']) or die('Not Found');
 
 	$data = explode('"', str_replace(array(" ", "\n", "\r"), "", $content));
-	echo json_encode(array('username' => explode('@', $data[161])[1], 'photo' => $data[175]));
+
+	$username = array_values(array_filter($data, function ($el) { return strpos($el, '@'); }))[0];
+	$username = explode('@', $username)[1];
+	$username = substr($username, 0, strpos($username, ')'));
+	$photo = array_values(array_filter($data, function ($el) { return strpos($el, 'scontent'); }))[0];
+
+	echo json_encode(array('username' => $username, 'photo' => $photo));
 ?>
